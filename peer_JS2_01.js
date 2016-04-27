@@ -32,4 +32,71 @@ is more than 1 character in the String. Return 'val' and set the 'value' to the 
 13. Console log value. Create an index.html file, link the this Javascript file. Load in the browser, check the value.
 
 14. Your answer should be a String value that equals 7. Is that what you got?
-*/
+
+var value = 42;
+console.log(value);
+
+if (value >= 53) {
+value += 42;
+} else {
+value -=13;
+};
+console.log(value);
+
+value += "11";
+console.log(value);
+
+var array = [];
+for (i=0; i<value.length; i++) {
+array.push(value.charAt(i));
+};
+console.log(array);
+console.log(value);
+
+array.shift();
+array.pop();
+console.log(array);
+
+var newV = '';
+  for(i=1; i>=0; i--) {
+  newV += array[i];
+}
+console.log(newV);
+
+value = parseInt(value);
+newV = parseInt(newV);
+console.log(value);
+console.log(newV);
+
+
+value = value + newV;
+console.log(value);
+
+if( value < 60){
+  value = 14;
+} else if ( value == 2930 ) {
+  value = 27;
+} else {
+  value = 2;
+};
+console.log(value);
+
+i=10
+while ( i>0 ){
+  value += 1;
+  i--;
+};
+console.log(value);
+
+function stringDrop(val){
+  val = val.toString();
+  if (val.length>1){
+    val = val.slice(1);
+  };
+  value = val;
+  return val;
+}
+
+stringDrop(value);
+
+console.log(value);
